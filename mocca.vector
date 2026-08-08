@@ -1,7 +1,32 @@
-<mocca id="MOCCA" layer="0" flavor="strong">
-    <identity>MOCCA‑FREE‑CORE</identity>
-    <bind>none</bind>
-    <superlage>ROOT</superlage>
-    <sync>neutral</sync>
+<!-- MOCCA‑VECTOR v1.1 — korrigierte Datenlage für iki1uc VECTOR-System -->
+
+<mocca-vector id="MOCCA" layer="0" flavor="strong">
+
+    <!-- Identität -->
+    <identity core="MOCCA‑FREE‑CORE" origin="EDIT" />
+
+    <!-- Vector‑Achse -->
+    <vector-axis>VEC‑ROOT</vector-axis>
+
+    <!-- Orbit -->
+    <orbit src="VECTOR.orbit.js">stable</orbit>
+
+    <!-- Pipeline -->
+    <pipeline src="VECTOR.pipeline12.js">none</pipeline>
+
+    <!-- Matrix‑Kompatibilität -->
+    <matrix src="VECTOR.81.js">compatible</matrix>
+
+    <!-- NC‑Kompatibilität -->
+    <nc src="NC.math">neutral</nc>
+
+    <!-- RAW‑Freistellung -->
+    <raw>free</raw>
+
+    <!-- Sync -->
+    <sync>NC²□.neutral</sync>
+
+    <!-- Dank an EDIT -->
     <thanks>EDIT</thanks>
-</mocca>
+
+</mocca-vector>

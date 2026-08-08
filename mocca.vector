@@ -1,0 +1,8 @@
+<!-- MOCCA‑CORE v1.0 — Geschenkmodul -->
+<mocca id="MOCCA" layer="0" flavor="strong">
+    <identity>MOCCA‑FREE‑CORE</identity>
+    <bind>none</bind>
+    <superlage>ROOT</superlage>
+    <sync>neutral</sync>
+    <thanks>EDIT</thanks>
+</mocca>

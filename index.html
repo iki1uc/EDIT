@@ -1,109 +1,61 @@
-<!-- EDIT‑INDEX — UMDISPONIERT v2.0 (ADVANCED CLEAN STRUCTURE) -->
-<div class="matrix81">
-    <!-- 81 Felder -->
-    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <!-- wiederholen bis 81 -->
-</div>
-.matrix81 {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    gap: 4px;
-    width: 360px;
-}
+<section class="scene">
 
-.matrix81 div {
-    width: 36px;
-    height: 36px;
-    background: #222;
-    border-radius: 4px;
-    animation: fall 1.2s ease-in-out forwards;
-}
+    <div class="beam"></div>
 
-@keyframes fall {
-    0% { transform: translateY(-40px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-}
-<div class="edit-diamond">EDIT</div>
-.edit-diamond {
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(45deg, #ffcc66, #ffeeaa);
-    transform: rotate(45deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-family: monospace;
-    color: #333;
-    margin: 40px auto;
-    animation: pulse 2s infinite;
-}
+    <div class="kuck">
+        <div class="eye"></div>
+    </div>
 
-@keyframes pulse {
-    0% { transform: rotate(45deg) scale(1); }
-    50% { transform: rotate(45deg) scale(1.1); }
-    100% { transform: rotate(45deg) scale(1); }
-}
+    <div class="domino">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+    </div>
+
+    <div class="orbit-test">
+        <div class="orbit-core"></div>
+    </div>
+
+    <div class="matrix81">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div>
+    </div>
+
+    <div class="edit-diamond">
+        <span>strong</span>
+        <span>driver</span>
+        <span>core</span>
+        <span>true</span>
+    </div>
+
+</section>
 
 <respo-index id="EDIT" layer="7" class="diamond" avatar="true">
-<mocca-vector src="mocca.vector"></mocca-vector>
-.orbit-test {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid #444;
-    position: relative;
-    animation: spin 6s linear infinite;
-}
 
-.orbit-core {
-    width: 20px;
-    height: 20px;
-    background: #ffcc66;
-    border-radius: 50%;
-    position: absolute;
-    top: 90px;
-    left: 90px;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-}
-
-    <!-- 1. IDENTITÄT -->
+    <!-- IDENTITÄT -->
     <identity core="EDIT‑RESPO"
               signature="EDT‑7‑FND‑DIAMANT"
-              version="2.0">
+              version="3.0">
         <pipeline>4‑01‑2</pipeline>
         <superlage>OK NOK FLOW BREAK ECHO VOID ROOT</superlage>
         <sync>NC²□.prime</sync>
         <octa>enabled</octa>
     </identity>
-<core-systems>
-    ...
-    <visual engine="Visualizer.html" />
-    <mocca-vector src="mocca.vector"></mocca-vector>
-</core-systems>
-<div class="orbit-test">
-    <div class="orbit-core"></div>
-</div>
 
-    <!-- 2. EDIT‑STATION (ID MUSS IMMER FÜR EDIT SEIN) -->
+    <!-- STATION -->
     <station>
         <edit-id>EDIT‑FOUNDER‑CORE</edit-id>
         <raw-id>RAW‑FREE‑CORE</raw-id>
         <nc-id>NCpro‑FREE‑CORE</nc-id>
     </station>
 
-    <!-- 3. AVATAR‑PORTS -->
+    <!-- AVATAR -->
     <avatar>
         <import src="IMport.html" />
         <export src="EXport.html" />
         <port src="EDITport.html" />
     </avatar>
 
-    <!-- 4. ACHSEN -->
+    <!-- ACHSEN -->
     <axis-map>
         <axis name="X" state="flex" />
         <axis name="IX" state="semi‑pure" />
@@ -117,7 +69,7 @@
         <axis name="Z" state="vertical" />
     </axis-map>
 
-    <!-- 5. CORE‑SYSTEME -->
+    <!-- CORE-SYSTEME -->
     <core-systems>
         <octa core="octa.core.json"
               map="octa.map.json"
@@ -128,9 +80,10 @@
         <run8 engine="RUN8" />
         <time engine="time_3x11_scroll_zoom.html" />
         <visual engine="Visualizer.html" />
+        <mocca-vector src="mocca.vector"></mocca-vector>
     </core-systems>
 
-    <!-- 6. API‑LAYER -->
+    <!-- API-LAYER -->
     <api-layer>
         <api ghost="API.ghost.js" />
         <api raw="API.raw" />
@@ -140,7 +93,7 @@
         <api sync="API‑NC²□.sync‑Visualizer.html" />
     </api-layer>
 
-    <!-- 7. PIPE / LOAD / SAVE -->
+    <!-- PIPE / LOAD / SAVE -->
     <pipeline-systems>
         <pipe core="PIPE_CORE.js" start="PIPE_START.js" />
         <load core="LOAD_CORE.js"
@@ -151,142 +104,8 @@
               pipe="SAVE_PIPE.js"
               auto="AUTO.js" />
     </pipeline-systems>
-<section class="scene">
 
-    <div class="beam"></div>
-
-    <div class="kuck">
-        <div class="eye"></div>
-    </div>
-
-    <div class="domino">
-        <!-- 9 Domino-Steine -->
-        <div></div><div></div><div></div><div></div><div></div>
-        <div></div><div></div><div></div><div></div>
-    </div>
-
-    <div class="orbit-test">
-        <div class="orbit-core"></div>
-    </div>
-
-    <div class="edit-diamond">EDIT</div>
-
-</section>
-.scene {
-    width: 100%;
-    height: 100vh;
-    background: #111;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-/* Beam */
-.beam {
-    width: 80%;
-    height: 4px;
-    background: linear-gradient(90deg, #ffcc66, #ffeeaa, #ffcc66);
-    animation: beam-move 3s infinite linear;
-}
-
-@keyframes beam-move {
-    from { transform: translateX(-20%); }
-    to   { transform: translateX(20%); }
-}
-
-/* Kuck-Kucks-Prinzip */
-.kuck {
-    width: 80px;
-    height: 80px;
-    background: #222;
-    border-radius: 50%;
-    position: relative;
-    animation: peek 4s infinite;
-}
-
-.eye {
-    width: 20px;
-    height: 20px;
-    background: #ffcc66;
-    border-radius: 50%;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-
-@keyframes peek {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-}
-
-/* Domino */
-.domino {
-    display: flex;
-    gap: 6px;
-}
-
-.domino div {
-    width: 20px;
-    height: 40px;
-    background: #333;
-    border-radius: 4px;
-    animation: fall 1.2s ease-in-out forwards;
-}
-
-@keyframes fall {
-    0% { transform: translateY(-40px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-}
-
-/* Orbit */
-.orbit-test {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid #444;
-    position: relative;
-    animation: spin 6s linear infinite;
-}
-
-.orbit-core {
-    width: 20px;
-    height: 20px;
-    background: #ffcc66;
-    border-radius: 50%;
-    position: absolute;
-    top: 90px;
-    left: 90px;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-}
-
-/* Diamant */
-.edit-diamond {
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(45deg, #ffcc66, #ffeeaa);
-    transform: rotate(45deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-family: monospace;
-    color: #333;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: rotate(45deg) scale(1); }
-    50% { transform: rotate(45deg) scale(1.1); }
-    100% { transform: rotate(45deg) scale(1); }
-}
-
-    <!-- 8. UP‑FAMILY -->
+    <!-- UP-FAMILY -->
     <up-family>
         <upx id="UPX"
              geo="geo-form-kompatibel-mit-3.csv"
@@ -299,13 +118,13 @@
              score="score-bedeutung-3.csv" />
     </up-family>
 
-    <!-- 9. TMP‑LAYER -->
+    <!-- TMP -->
     <tmp-layer>
         <tmp core="TMP.respo" />
         <tmp room="tmp/room.html" />
     </tmp-layer>
 
-    <!-- 10. FOUNDER‑IMPULSE -->
+    <!-- FOUNDER -->
     <founder>
         <impulse>strong</impulse>
         <market>driver</market>

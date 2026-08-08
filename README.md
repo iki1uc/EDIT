@@ -1,30 +1,87 @@
-# 4u – Response Layer 7 (iki1uc)
+# EDIT — Geo-Metrische Modularstruktur (iki1uc)
 
-4u ist die 7. Response-Ebene im iki1uc-System.
-Sie ersetzt die alte RESPO-Achse durch ein neues, systemisches Modell:
+EDIT ist ein geo-metrisches System aus modularen Ebenen.  
+Jede Ebene besitzt eine eigene Funktion, Bewegung und Last.
 
-OK / NOK / FLOW / BREAK / ECHO / VOID / ROOT
+---
 
-4u verbindet:
-- PX-TRIO (PX3 / PX6 / PX9)
-- PX12 / PX4 (Fusion + Achse)
-- SYS / SYS-x (System + Kreuzung)
-- 2me (Mirror-Return)
-- TEM (Zeit)
-- UI-SCANNER (Interface)
+## GEO — Raum und Lage
 
------------------------------------------
-# FUNKTION
+EDIT arbeitet in drei Grundachsen:
 
-respo.OK     → Zustimmung  
-respo.NOK    → Ablehnung  
-respo.FLOW   → System fließt  
-respo.BREAK  → System bricht  
-respo.ECHO   → Spiegelung  
-respo.VOID   → Neutral  
-respo.ROOT   → Rückkehr
+- X — horizontale Ausrichtung  
+- Y — vertikale Ausrichtung  
+- Z — Tiefenlage  
 
------------------------------------------
-# STATUS
+Die Module UPX, UPY und UPZ bewegen Werte entlang dieser Achsen.  
+GEO definiert die Lage, nicht die Bedeutung.
 
-4u ist aktiv, eigenständig und vollständig iki1uc.
+---
+
+## METRIE — Maß und Verhältnis
+
+EDIT nutzt metrische Raster:
+
+- 9×9 — Vollmatrix  
+- 6×6 — Mittelmatrix  
+- 3×3 — Kernmatrix  
+- 3×1 — Einzeichenlinie  
+
+Diese Raster bestimmen Last, Richtung und Verarbeitung.  
+METRIE definiert das Maß, nicht den Inhalt.
+
+---
+
+## MODULAR — Funktion und Ablauf
+
+EDIT besteht aus funktionalen Modulen:
+
+- LOAD — Aufnahme  
+- MOVE — Verschiebung  
+- PIPE — Durchlauf  
+- SAVE — Speicherung  
+- API — Zugriff  
+- 3TH — Dreifachstruktur  
+- tmp — Zwischenstand  
+- EDY.js — dynamische Ausführung  
+
+Jedes Modul arbeitet unabhängig und folgt dem EDIT‑Prinzip:
+
+Start → Bewegung → Abschluss
+
+---
+
+## ID — Signatur
+
+ID.html definiert die EDIT‑Signatur:
+
+- core  
+- layer  
+- mode  
+- geo  
+- metrie  
+- modular  
+
+Die ID ist kein Element, sondern ein Marker der Struktur.
+
+---
+
+## INDEX — Anzeige
+
+index.html zeigt die aktive EDIT‑Ebene.  
+Sie besitzt keine Logik, nur Darstellung.
+
+---
+
+## VECTOR — Richtung
+
+mocca.vector definiert die Bewegungsrichtung im EDIT‑System.  
+VECTOR ist die Verbindung zwischen GEO und MODULAR.
+
+---
+
+## Zweck
+
+EDIT bildet die geo-metrische Grundlage für alle weiteren Systeme.  
+Es ist neutral, modular und skalierbar.
+
